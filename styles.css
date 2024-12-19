@@ -107,3 +107,33 @@ footer {
     background-color: #333;
     color: #ffc107;
 }
+
+/* Media queries untuk perangkat dengan lebar layar 600px atau lebih kecil */
+@media (max-width: 600px) {
+    .add-row {
+        flex-direction: column;
+    }
+
+    .add-row input, .add-row button {
+        width: 100%;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    .total {
+        font-size: 1rem;
+    }
+}
+
+/* Media queries untuk perangkat dengan lebar layar 768px atau lebih kecil */
+@media (max-width: 768px) {
+    .add-row input, .add-row button {
+        width: 100%;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar e-IPO</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS -->
+</head>
+<body>
+    <header>
+        <img src="https://www.dropbox.com/scl/fi/gmerl81buolxn08omruex/east-wood-finish2.png?rlkey=6b1fboi1eu5v9rhrz0abp115z&st=8b29ngp0&raw=1" alt="Logo" />
+        Daftar e-IPO
+    </header>
+
+    <div class="container">
+        <div class="add-row">
+            <input type="text" id="company" placeholder="Nama Perusahaan" />
+            <input type="text" id="price" placeholder="Harga Saham (Rp)" />
+            <input type="date" id="offerStartDate" placeholder="Tanggal Mulai Penawaran" />
+            <input type="date" id="offerEndDate" placeholder="Tanggal Akhir Penawaran" />
+            <input type="number" id="capital" placeholder="Modal (Rp)" />
+            <button onclick="addRow()">Tambah</button>
+        </div>
+
+        <table id="ipoTable">
+            <thead>
+                <tr>
+                    <th>Nama Perusahaan</th>
+                    <th>Harga Saham (Rp)</th>
+                    <th>Tanggal Mulai Penawaran</th>
+                    <th>Tanggal Akhir Penawaran</th>
+                    <th>Modal (Rp)</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added dynamically -->
+            </tbody>
+        </table>
+
+        <div class="total">
+            Total Modal: Rp <span id="totalCapital">0</span>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Daftar e-IPO | Hadiah Natal Tahun ini gais!
+    </footer>
+
+    <script src="script.js"></script> <!-- Link ke file JavaScript -->
+</body>
+</html>

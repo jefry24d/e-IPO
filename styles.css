@@ -57,7 +57,7 @@ body {
 
 #form-emiten button {
     padding: 12px 20px;
-    background-color: #28a745;
+    background-color: #356abb;
     color: white;
     font-weight: bold;
     border: none;
@@ -67,7 +67,7 @@ body {
 }
 
 #form-emiten button:hover {
-    background-color: #218838;
+    background-color: #212b88;
 }
 
 /* Tabel daftar emiten */

@@ -1,0 +1,194 @@
+/* Mengimpor font League Spartan */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'League Spartan', sans-serif; /* Menggunakan League Spartan */
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+/* Flex container untuk yellow dan right container */
+.main-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Kontainer kuning di sebelah kiri */
+.yellow-container {
+    flex: 0 0 260px; /* Lebar tetap 260px */
+    padding: 10px;
+    background-color: #ffc107;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Form tambah emiten */
+#form-emiten {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Mengurangi jarak antar elemen form */
+    margin-bottom: 10px;
+}
+
+#form-emiten label {
+    font-weight: 700; /* Menebalkan label */
+    margin-bottom: 5px; /* Memberikan jarak antara label dan input */
+}
+
+#form-emiten input {
+    width: 100%;
+    padding: 8px; /* Padding lebih kecil untuk mengurangi ruang */
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+#form-emiten input:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+#form-emiten button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#form-emiten button:hover {
+    background-color: #218838;
+}
+
+/* Tabel daftar emiten */
+#daftar-emiten {
+    background-color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-family: 'League Spartan', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, transform 0.2s ease-in-out;
+}
+
+#daftar-emiten:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+/* Kontainer kanan */
+.right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Wrapper untuk Kalkulator dan Informasi Emiten */
+.info-calculator-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Informasi Emiten */
+.info-emiten {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Kalkulator */
+.kalkulator {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Wrapper bawah */
+.bottom-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Kontainer modal */
+#daftar-emiten-modal {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol add-emiten */
+#add-emiten-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#add-emiten-button {
+    padding: 12px 25px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#add-emiten-button:hover {
+    background-color: #e0a800;
+}
+
+#add-emiten-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Wrapper horizontal untuk Kontainer 3 dan 4 */
+.horizontal-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+/* Kontainer 3 dan 4 */
+#container3, #container4 {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS untuk tombol tempat sampah */
+.delete-button {
+    background: none;         /* Tidak ada background */
+    border: none;             /* Tidak ada border */
+    font-size: 16px;          /* Ukuran font tombol */
+    cursor: pointer;         /* Cursor jadi pointer */
+    margin-left: 10px;        /* Memberikan jarak antara tombol dan teks */
+    color: #f00;              /* Warna merah untuk tombol tempat sampah */
+}
+
+.delete-button:hover {
+    color: #a00;              /* Warna lebih gelap saat hover */
+}
